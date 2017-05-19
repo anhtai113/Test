@@ -1,0 +1,53 @@
+body{
+	margin: 0px auto;
+	background-color: #4347FA;
+	background: -webkit-radial-gradient(circle,blue,yellow,blue);
+	background:-o-radial-gradient(circle,red,yellow,blue);
+	background:-moz-radial-gradient(circle,red,yellow,blue)
+	background:radial-gradient(circle,blue,yellow,blue);
+}
+
+/*can chinh toan bo noi dung*/
+	.animation{
+		width: 100px;
+		height: 100px;
+		position: relative;
+		background-color: #D0D9DB;
+		animation-name: demo;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+
+
+	}
+	@keyframes demo{
+		 	0%{ background-image:url(../../image/background/giphy.gif);left:0px;top:0px; }
+		 	25%{background-image:url(../../image/background/giphy.gif);left:1230px;top: 0px;}
+		 	50%{background-image:url(../../image/background/giphy.gif);left: 1230px;top:900px;}
+		 	75%{background-image:url(../../image/background/giphy.gif);left: 0px;top:900px;}
+		 	100%{background-image:url(../../image/background/giphy.gif);left: 0px;top:0px;}
+
+
+	}
+	/*thiet lap animation cho div dau tien,con chuot chay*/
+	.container{
+		/*background-color: #B3C9F2;*/
+		background: radial-gradient(ellipse,red,yellow,blue);
+		width: 1100px;
+		height: auto;
+		border-radius: 10px solid;
+	}
+	/*can chinh container cho tat ca cac row*/
+	#header{
+		border:10px solid transparent;
+		border-image: url(../../image/border/1.png) 30 round;
+		margin-bottom: 5px;
+
+	}
+	/*can chinh cho row1 header*/
+	#footer{
+		width: 100%;
+		height: 300px;
+		font-weight: bold;
+		text-shadow: inherit;
+		background:radial-gradient(circle,yellow,blue,white);
+	}
